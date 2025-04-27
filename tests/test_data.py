@@ -12,7 +12,7 @@ from .common import FIXTURES_PATH
 logger = logging.getLogger(__name__)
 
 
-def test_packed_sft_dataset():
+def get_packed_sft_dataset():
     sft_sample_path = FIXTURES_PATH / "sft_sample.jsonl"
     tokenizer = AutoTokenizer.from_pretrained(FIXTURES_PATH / "Meta-Llama-3-8B")
     seq_length = 32
